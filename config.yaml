@@ -1,0 +1,12 @@
+name: MAX7229 Matrix
+version: "1.0"
+slug: matrix
+description: MAX7229 SPI Display
+startup: services
+boot: auto
+host_network: true
+privileged:
+  - SYS_RAWIO
+devices:
+  - /dev/spidev0.0
+  - /dev/spidev0.1
